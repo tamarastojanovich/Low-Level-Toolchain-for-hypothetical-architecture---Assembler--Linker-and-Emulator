@@ -1,0 +1,3 @@
+flex -o flexer.yy.cc ./l/Flexer.l;
+
+g++ -o assembler -I ./h  ./src/InstructionOperator.cpp ./src/printing.cpp ./src/RelocationTable.cpp ./src/SectionTable.cpp ./src/SymbolTable.cpp ./src/asmRun.cpp ./src/assembly.cpp flexer.yy.cc;

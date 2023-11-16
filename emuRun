@@ -1,0 +1,3 @@
+g++ -o emulator -I ./h  ./src/Emulator.cpp ./src/EmulatorMain.cpp  ./flexerEmu.yy.cc
+
+./emulator output.hex

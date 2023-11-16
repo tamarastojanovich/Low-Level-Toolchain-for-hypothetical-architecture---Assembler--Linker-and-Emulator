@@ -1,0 +1,3 @@
+g++ -o linker ./src/Linker.cpp ./src/LinkerMain.cpp ./src/printing.cpp ./src/RelocationTable.cpp ./src/SectionTable.cpp ./src/SymbolTable.cpp
+
+./linker -hex -o output.hex ./ivt.o ./math.o ./main.o ./isr_reset.o ./isr_terminal.o ./isr_timer.o ./isr_user0.o
